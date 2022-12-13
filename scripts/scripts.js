@@ -1,7 +1,8 @@
 const btn = document.getElementById("btn");
+const container = document.getElementById("container");
+const desc = document.getElementById("desc");
 
 btn.addEventListener("click", () => {
-  //   window.open("https://api.manoapp.com/apipie");
   getProducts();
 });
 
@@ -15,6 +16,9 @@ function getProducts() {
     },
   })
     .then((response) => response.json())
-    .then((response) => console.log(response))
+    .then((data) => {
+      let item = data.items;
+      let naming = item[0].title;
+    })
     .catch((err) => console.error(err));
 }
