@@ -6,9 +6,29 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #f1f1f1;
+    background-color: white;
 }
 
+.btn{
+    background-color: steelblue;
+    height: 50 px;
+    width: 100px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.btn:hover{
+    background-color: #333;
+    color: white;
+    transform: scale(1.05);
+}
 .product_container{
     width: 150px;
     height: 200px;

@@ -3,7 +3,7 @@ const container = document.getElementById("container");
 const desc = document.getElementById("desc");
 
 btn.addEventListener("click", () => {
-  getProducts();
+  window.open("https://api.manoapp.com/apipie");
 });
 
 function getProducts() {
